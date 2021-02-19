@@ -1,0 +1,87 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Create pdf from source files</title>
+</head>
+
+<body>
+  <pdf-button>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+      #wrapper {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+        margin: 100px;
+      }
+    </style>
+    <div id="wrapper">
+      <form id="form">
+        <div class="form-group">
+          <label for="repoUrl">Repo url: </label>
+          <input type="text" class="form-control" id="repoUrl" aria-describedby="emailHelp" placeholder="Enter url">
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="isPrivate">
+          <label class="custom-control-label" for="isPrivate">Do not show in the last items list</label>
+        </div>
+        <div class="progress d-none my-2">
+          <div class="progress-bar" id="progress" role="progressbar" style="width: 0%" aria-valuemin="0"
+            aria-valuemax="100">
+          </div>
+        </div>
+        <div class="alert alert-danger my-4 d-none" role="alert" id="error">
+        </div>
+        <div class="info my-4" id="info">
+        </div>
+        <button class="btn btn-primary" type="submit" id="create" disabled="">
+          Click to create PDF
+        </button>
+      </form>
+      <ul class="my-4" id="files">
+        <li>
+          <a href="/public/rzubek.cslisp.2020-12-01T17:55:00.872Z.pdf" class="my-2"
+            target="_blank">/public/rzubek.cslisp.2020-12-01T17:55:00.872Z.pdf</a>
+        </li><br>
+        <li>
+          <a href="/public/tluyben.klong.2020-11-25T20:01:14.254Z.pdf" class="my-2"
+            target="_blank">/public/tluyben.klong.2020-11-25T20:01:14.254Z.pdf</a>
+        </li><br>
+        <li>
+          <a href="/public/tluyben.klong.2020-11-25T19:58:35.255Z.pdf" class="my-2"
+            target="_blank">/public/tluyben.klong.2020-11-25T19:58:35.255Z.pdf</a>
+        </li><br>
+        <li>
+          <a href="/public/eosio.eosjs-ecc.2020-11-12T07:29:23.151Z.pdf" class="my-2"
+            target="_blank">/public/eosio.eosjs-ecc.2020-11-12T07:29:23.151Z.pdf</a>
+        </li><br>
+        <li>
+          <a href="/public/kmackay.micro-ecc.2020-11-12T07:21:37.239Z.pdf" class="my-2"
+            target="_blank">/public/kmackay.micro-ecc.2020-11-12T07:21:37.239Z.pdf</a>
+        </li><br>
+        <li>
+          <a href="/public/enso-org.enso.2020-11-06T11:48:25.283Z.pdf" class="my-2"
+            target="_blank">/public/enso-org.enso.2020-11-06T11:48:25.283Z.pdf</a>
+        </li><br>
+        <li>
+          <a href="/public/scylladb.scylla.2020-10-31T16:05:43.434Z.pdf" class="my-2"
+            target="_blank">/public/scylladb.scylla.2020-10-31T16:05:43.434Z.pdf</a>
+        </li><br>
+        <li>
+          <a href="/public/tluyben.go-flutter.2020-10-30T10:40:50.688Z.pdf" class="my-2"
+            target="_blank">/public/tluyben.go-flutter.2020-10-30T10:40:50.688Z.pdf</a>
+        </li><br>
+        <li>
+          <a href="/public/tluyben.tingodb.2020-10-30T10:33:13.639Z.pdf" class="my-2"
+            target="_blank">/public/tluyben.tingodb.2020-10-30T10:33:13.639Z.pdf</a>
+        </li><br>
+        <li>
+          <a href="/public/tluyben.php-simple-expression-exec.2020-10-30T10:25:30.076Z.pdf" class="my-2"
+            target="_blank">/public/tluyben.php-simple-expression-exec.2020-10-30T10:25:30.076Z.pdf</a>
+        </li>
+      </ul>
+    </div>
+  </pdf-button>
+  <script src="main.js"></script>
+</body>
+
+</html>
